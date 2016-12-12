@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body{
+  height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body{
+  background-color:cyan;
+  font-family: 'Roboto Slab', serif;
+}
+
+main{
+  width: 90%;
+  min-height: 90%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+  position: relative;
+  border-radius:10px;
+  padding:40px;
+  color:white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+h1{
+  color: white;
+  font-size: 65px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+h2{
+  font-size:25px;
+}
+
+button{
+  font-size: 30px;
+  color: green;
+  background-color: cyan;
+  width: 300px;
+  height: 75px;
+  border: 0;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:10px;
+  margin-bottom:10px;
+}
+button:focus{
+  outline:none;
+}
+
+p{
+  font-size: 28px;
+  padding: 10px;
+  font-weight:lighter;
+}
+
+p strong{
+  font-weight:bold;
+}
+
+p img{
+  width: 75px;
+  height: 75px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: cyan;
+}
+
+ul{
+  height:40px;
+}
+
+ul li{
+  display:inline-block;
+  background-color: cyan;
+  width: 10px;
+  height: 25px;
+  margin-right: 3px;
+}
+
+.question{
+  border:5px solid cyan;
+  background-color: rgba(0, 255, 255, 0.5);
+  color:black;
+  height: 230px;
+}
+
+.question p{
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.question ul li{
+  display:block;
+  background-color: transparent;
+  height: 25px;
+  width: 95%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.question ul li a{
+  cursor:pointer;
+  color:black;
+}
+
+.question button{
+  width: 200px;
+  height: 50px;
+  top: 0px;
+}
+
+.left{
+  width: 75%;
+  display: inline-block;
+}
+
+.left img{
+  width: 75px;
+  height: 75px;
+  background-color: cyan;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.left .counter{
+  display:inline-block;
+  vertical-align:top;
+  margin:5px;
+}
+
+.left .health-bar{
+  display:block;
+  margin:10px;
+}
+
+.left ul li{
+  box-shadow: 1px 1px 5px cyan;
+}
+
+.right{
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.game-over{
+  text-align:center;
+}
+
+.game-over p{
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.game-over .levels{
+  text-align:left;
+}
+
+.game-over .levels .level-title{
+  text-decoration:underline;
+  font-weight:normal;
+}
+
+.game-over .levels p{
+  line-height:25px;
+  font-weight:lighter;
+}
+
+.game-over button{
+  left: 0%;
+  transform: translateX(0%);
+}
