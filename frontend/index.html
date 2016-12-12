@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
 
     <!-- Styles -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="assets/stylesheets/style.css" rel="stylesheet">
 
     <!-- Angular Scripts -->
@@ -79,7 +78,13 @@
             </div>
 
             <div class="right">
-                <h2>Money: ${{money}}.00</h2>
+
+                <div class="counter">
+                    <h2>Money: ${{money}}.00</h2>
+                    <ul>
+                      <li style="background-color:{{point.color}}; box-shadow:1px 1px 5px {{point.color}};" ng-repeat="point in scores.money track by $index"></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="question">
